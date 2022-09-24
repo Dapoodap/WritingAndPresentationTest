@@ -22,25 +22,25 @@ Kel.		: FEBE 13 / FE 2
  - Terdapat command atau perintah perintah yang bisa kita gunakan untuk melakukan aksi atau manipulasi, antara lain :
 	 - **PWD (*Print Working Directory*)** Command pwd merupakan sebuiah perintah untuk mengetahui dimana path kita berada, ex.
 
-	  	![PWD command](/gambar/pwd.jpg)
+	  	![PWD command](pwd.jpg)
 
 	 -  **ls (*Lists*)** Merupakan sebuah command untuk melihat apa saja sih file yang ada pada folder yang sedang kita buka, ex.
 
-	 	![ls command](/gambar/ls.jpg)
+	 	![ls command](ls.jpg)
 	 - **cd (*change directory*)** Merupakan command yang sangat sering digunakan karena digunakan untukberpindah folder / direktori, ex.
 
-		![Tux, the Linux mascot](/gambar/cd.jpg)
+		![Tux, the Linux mascot](cd.jpg)
 		
 	- **touch** Command touch merupakan perintah untuk membuat sebuah file baru pada direktori, ex.
-	![touch command](/gambar/touch.jpg)
+	![touch command](touch.jpg)
 
 	- **MKDIR (*Make Directory*)** Merupakan sebuah command untuk membuat suatu direktori baru
 	- Ada beberapa command untuk membaca sebuah file yang ada pada suatu direktori yaitu **CAT** dimana **CAT** merupakan command untuk melihat semua isi file. Ada juga **HEAD** untuk melihat isi file yang teratas dan **TAIL** melihat yang berada pada line terbawah.
 
 	- Kita juga bisa mengedit isi file dengan command sesuai editor yang akan kita gunakan, ex
 
-		![nano command](/gambar/nano1.jpg) 
-		![nano command](/gambar/nano2.jpg)
+		![nano command](nano1.jpg) 
+		![nano command](nano2.jpg)
 	- **cp (*Copy*)** Merupakan sebuah command yang kita gunakan untuk mengcopy atau menyalin file atau directory
 	- **mv (*Move*)** Kita gunakan command ini untuk memindahkan file atau directory. Selain itu kita juga bisa rename dengan command ini
 	- **rm (*Remove*)** Yang terakhir kita bisa memanipulasi dengan menghapus file atau direktori dengan command rm. untuk menghapus file  `rm -R` sedangkan untuk menghapus direktori menggunakan command `rm -d`
@@ -50,12 +50,12 @@ Kel.		: FEBE 13 / FE 2
  - Version control system memiliki tugas untuk mencatat setiap change atau perubahan yang dilakukan (termasuk manipulasi perubahan file dan code yang kita buat) pada ruang lingklup kerja individu maupun dengan tim
  - Untuk penyedia layanan penyimpanan version control system git biasanya menggunakan **github**,** gitlab**, atau **bitbucket**.
  - Sebelum kita mengetahui bagaimana cara menggunakan git dan github kita perllu melakukan instalasi dengan beberapa step :
-	 -  Mendownload dan install [git](https://stackedit.io/). 
+	 -  Mendownload dan install [git](https://git-scm.com/downloads). 
 	 - Melakukan configurasi dengan command 
 		 `git config global user.name "daffaRadh"` 
 		 `git config global user.email"daffasven@gmail.com"`
 	- Nantinya kita dapat mengecek hasil config kita dengan command `git config --list`
-		![config result command](/gambar/config.jpg) 
+		![config result command](config.jpg) 
 - Setelah kita sudah menginstall  git di desktop kita, selanjutnya kita perlu memahami bagaimana cara agar kita bisa membuat repository (direktori penyimpanan file proyek) hingga push ke vendor git hub. command dan stepnya adalah :
 	- `git init` command tersebut digunakan untuk menginisialisasi sebuah repository di file lokal
 	- `git add .` command yang digunakan untuk menambahkan  file baru pada file lokal tersebut
