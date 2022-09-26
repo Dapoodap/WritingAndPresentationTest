@@ -2,7 +2,7 @@
 # MSIB SKILVUL #TECH4IMPACT BATCH 4
 
 ## Data diri  :rocket:
-#### Nama : Daffa
+#### Nama : Daffa Radhitya PWP
 #### EMAIL : 111202012648@mhs.dinus.ac.id
 #### Univ. Asal : Universitas Dian Nuswantoro
 #### Track : Frontend Web Developer
@@ -152,6 +152,7 @@
    ### Javascript Dasar
    - Javascript merupakan bahasa pemograman yang digunakan sebagai logical untuk sebuah website
    - Selain itu di javascript juga memiliki peran peran untuk membuat website kita lebih interaktif (seperti alert(), prompt(),confirm())
+   - Javascript dapat disisipkan melalui *internal* pada html atau *eksternal* diluar file html
    - kita dapat menjalankan javscript tapi kita perlu peran html sebagai perantaranya pada browser seperti chrome, firefox, dsb. Untuk mnampilkan output di terminal browser kita bisa menggunakan `console.log("Hello World"`
    - Untuk komen pada javascript bisa menggunakan `/` atau `/* */` untuk multiple komen 
    - Di javascript tipe data juga merupakan hal yang sangat pemtig untuk klasifikasi 
