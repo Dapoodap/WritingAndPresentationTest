@@ -49,7 +49,7 @@
  - Saat bekerja bersama dalam suatu programmer membutuhkan suatu tools yang membantunya agar mudah untuk berkolaborasi dengan sesama programmer
  - Git merupakan salah satu tools yang dibuat bagi programmer untuk memudahkan pekerjaan sebagai Version control System
  - Version control system memiliki tugas untuk mencatat setiap change atau perubahan yang dilakukan (termasuk manipulasi perubahan file dan code yang kita buat) pada ruang lingklup kerja individu maupun dengan tim
- - Untuk penyedia layanan penyimpanan version control system git biasanya menggunakan **github**,** gitlab**, atau **bitbucket**.
+ - Untuk penyedia layanan penyimpanan version control system git biasanya menggunakan **github**, **gitlab**, atau **bitbucket**.
  - Sebelum kita mengetahui bagaimana cara menggunakan git dan github kita perllu melakukan instalasi dengan beberapa step :
 	 -  Mendownload dan install [git](https://git-scm.com/downloads). 
 	 - Melakukan configurasi dengan command 
@@ -103,11 +103,11 @@
  - CSS atau *Casading Style Sheet* digunakan untuk mendesain website kita yang sudah jelas kerangka awalnya dengan html tadi. Bisa mengubah warna, ukuran font, jenis font, warna font, dan styling lainnya.
  - CSS dapat di sisipkan dengan 3 cara yaitu :
 	 - **inline**
-	![inline css](inline.jpg)
+		![inline css](inline.jpg)
 	 - **internal**
-	 ![internal css](internal.jpg)
+	 	![internal css](internal.jpg)
 	 - **Eksternal**
-	 ![external css](eksternal1.jpg)![netlify overview](eksternal2.jpg)
+	 	![external css](eksternal1.jpg)
  - CSS sendiri juga memilik sintaks yaitu
 `  .elementHTML{  
      property : value } `
@@ -143,11 +143,11 @@
 	    -   Algoritma menyelesaikan suatu permsalahan mnggunakn sbuah data tersebut
 - Terdapat beberapa macam penulisan algoritma yaitu :
 	- Deskripsi seperti menulis dengan bahasa sehari hari
-	![netlify overview](deskriptif.jpg)
+		![netlify overview](deskriptif.jpg)
 	- Pseudocode menuliskan algortma dengan model yang semi coding dan menggunakn bahasa inggris
-	![netlify overview](pseudo.png)
+		![netlify overview](pseudo.png)
 	- Flowchart meuliskan algoritma dengan penggambaran alur diagaram
-	![netlify overview](flow.png)
+		![netlify overview](flow.png)
 ---
    ### Javascript Dasar
    - Javascript merupakan bahasa pemograman yang digunakan sebagai logical untuk sebuah website
