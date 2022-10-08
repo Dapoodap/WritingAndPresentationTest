@@ -109,22 +109,22 @@
 
 	![revursive](recursive.png)
 ---
-### Javascript intermediate (Asyncrhonus, callback, dan promise)
-- Asychronus merupakan sebuah sifat yang dimiliki javascript yang dimana artinya javascript memperbolehkan antrian operasi atau task disela apabila task sebelumnya memakan waktu yang relatif lama dan memanggil kembali task yang lama tadi apabila task yang lain sudah selesai .
-- Dia (javascript) akan meletakkan task yang memakan waktu itu kedalam callback queue. Setelah itu javascript akan melakukan task lainnya dan apabila sudah akan memanggil task yang memakan waktu lama tadi (asychronus).
+### Javascript intermediate (Asynchronous, callback, dan promise)
+- Asynchronous merupakan sebuah sifat yang dimiliki javascript yang dimana artinya javascript memperbolehkan antrian operasi atau task disela apabila task sebelumnya memakan waktu yang relatif lama dan memanggil kembali task yang lama tadi apabila task yang lain sudah selesai .
+- Dia (javascript) akan meletakkan task yang memakan waktu itu kedalam callback queue. Setelah itu javascript akan melakukan task lainnya dan apabila sudah akan memanggil task yang memakan waktu lama tadi (asynchronous).
 
 	![scgeme1](scheme.png)
 
 	![scgeme1](async.png)
 
-- Diatas merupakan scheme / skema dalam proses asychronus dan contoh coding
-- Setlah kita tau proses asynchronus, selanjutnya kita belajar tentang konsep callback. Callback adalah cara dimana kita membuat function sebagai argumen function lain.
+- Diatas merupakan scheme / skema dalam proses asynchronous dan contoh coding
+- Setlah kita tau proses asynchronous, selanjutnya kita belajar tentang konsep callback. Callback adalah cara dimana kita membuat function sebagai argumen function lain.
 - Biasanya kita hanya membuat argumen berupa nilai yang memang jita inginkan atau kita expect, namun denga callback kita bisa menggunakan function sebagai argumen, contoh 
 
 	![callback](callback.png)
 
-- Lalu selanjutnya adalah promise. Promise merepresntasikan sebuah penyelesaian task (atau bisa saja gagal) oleh sebuah proses asynchronus.
-- Intinya promise akan menangkap kejadian yang terjadi selama kita melakukan proses asychronus baik sukses atau berhasil
+- Lalu selanjutnya adalah promise. Promise merepresntasikan sebuah penyelesaian task (atau bisa saja gagal) oleh sebuah proses asynchronous.
+- Intinya promise akan menangkap kejadian yang terjadi selama kita melakukan proses asynchronous baik sukses atau berhasil
 - Ada 3 tahapan dalam promise yaitu **pending**,**rejected**,**fullfiled**.
 - Pending itu ketika di fase insialisasi atau masi dalam proses *either* diterima atau ditolak
 - Rejected merupakan fase dimana task gagal atau tidak tepenuhi
