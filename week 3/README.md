@@ -115,6 +115,8 @@
 
 	![scgeme1](scheme.png)
 
+	![scgeme1](async.png)
+
 - Diatas merupakan scheme / skema dalam proses asychronus dan contoh coding
 - Setlah kita tau proses asynchronus, selanjutnya kita belajar tentang konsep callback. Callback adalah cara dimana kita membuat function sebagai argumen function lain.
 - Biasanya kita hanya membuat argumen berupa nilai yang memang jita inginkan atau kita expect, namun denga callback kita bisa menggunakan function sebagai argumen, contoh 
