@@ -35,7 +35,7 @@
     ![map](mapping.png)
  ---
  ### Javascript intermediate (Object)
- - Selain array sebagai tipe data primitive, ada juga *object* sebagai tipe data primitive karena dapat berisi berbagai jenis tipe data di dalamnya. 
+ - Selain array sebagai tipe data non primitive, ada juga *object* sebagai tipe data non primitive karena dapat berisi berbagai jenis tipe data di dalamnya. 
  - Berbeda dengan array, object isinya berupa *properti* yang dapat diakses dengan key yang ada di dalamnya.
  - Properti pada javascript berupa `key : value`. key sebagai id yang nantinya akan digunakan untuk mengakses value.
  - Object memiliki synatx sebagai berikut `let obj= {key : value}` contohnya, 
