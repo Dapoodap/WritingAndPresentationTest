@@ -10,7 +10,7 @@
 ---
 
 ## Resume week 4
-### `Javascript intermediate` (Async - Await dan fetch API)
+### Javascript intermediate (Async - Await dan fetch API)
 
  - Setelah pada modul sebelumnya kita mengetahui konsep asyncrhonous lalu ada juga pembuatan promise serta cara menangkap kondisinya dengan then catch. Selanjutnya kita akan belajar cara lain untuk bisa menangkap promise yang sudah kita buat yaitu dengan async await
  - Perbedaan yang paling mendasar pada async await dengan then catch adalah penggunaan async await yang dimasukkan pada sebuah function. 
