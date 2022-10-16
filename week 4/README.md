@@ -47,7 +47,7 @@
  ![loopingHasilFetch](showTitle.png)
  ![async await](hasilShow%20title.jpg)
 - Karena kita mendapatkan dara array of object, berdasarkan module sebelumnya kita bisa gunakan map array untuk looping dan dot notation untuk memilih value dari objectnya
-- Selanjutnya data data tersebut kita bis ainject ke halama HMTL kita dengan DOM yang sudah kita pelajari sebelumnya
+- Selanjutnya data data tersebut kita bisa inject ke halaman HMTL kita dengan DOM yang sudah kita pelajari sebelumnya
 ---
 ### Git dan Github Lanjutan
 - Pada module module sebelumnya kita sudah mempelajari penggunaan git dan github seperti metode push, remote, dan juga commit. Selanjutnya kita akan belajar lanjutannya.
@@ -108,7 +108,7 @@
 
 	![colbreak](responsive1.gif)
 
-- Kita bisa melihat bahwa apabila kita kecilkan ukuran viewport dan ukuran dari container akan terus berukuran maksimal 50% apabila kurang dari 50% max width tidak akan berefek apa apa
+- Kita bisa melihat bahwa apabila kita kecilkan ukuran viewport maka ukuran dari gambar akan terus berukuran maksimal 50% apabila lebih dari 50% max width tidak akan berefek apa apa
 - Selanjutnya kita akan membahas tentang unit css. Unit css merupakan sebuah standart pengukuran yang ada di css.
 - Unit css ada 2 jenis, **absolute**  dan **Relative** . Apa sih bedanya absolute dan relative sizing units ?
 - Absolute artinya ukurannya baku atau tidak bisa berubah. Maksudnya apabila kita menggunakan absolute unit kita tidak secara mudah mengubah ukurannya secara kata lain fixed. Yang tergolong absolute units adalah pixel (px), inch (in), picas (pc), serta point (pt)
