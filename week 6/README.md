@@ -112,4 +112,18 @@
 	- Update
 		Ketika website kita menerima sebuah perubahan atau update dari suatu hal
 	- Unmount 
-		Ketika website kita mulai menghilang atau berganti   
+		Ketika website kita mulai menghilang atau berganti 
+- Pada setiap lifecycle tersebut kita bisa memberikan sebuah side effect atau efek samping sesuai lifecycle itu berada.
+- Pemberian side effect tersebut kita berikan dengan syntax `useEffect ()` sehimgga kita bisa menggunakan callback di dalamnya
+- Agar lebih paham dan jelas kita langsung contohkan di codingan 
+![event](useEffect.png)
+
+- Bisa terlihat bahwa pada syntax useEffect kita bisa menambahkan sebuah item setelah function yaitu sebuah `[]` kenapa ?
+- Apabila kita hanya menggunakan useEffect dan memberikan sebuah intruksi didalamnya, maka dia akan menajalankan instruksi tersebut setiap page mount. Page apabila di refresh akan melakukan mount untuk menampilkan tampilan awal page. Pada react sendiri apabila kita melakukan perubahan website kita akan otomatis refresh dan nantinya useEffect kita akan bekerja terus.
+- Hal tersebut bisa kita tanggulangi dengan memberikan bracket array kosong. Nantinya apabila ada perubahan page kita tidak akan melakukan useEffect ketika refresh hanya ketika mouunt pertama kali
+- Namun kita bisa memberikan isi didalamnya untuk memberikan spesifik update apa yang akan membuat kita melakukan useEffect
+- Pada codingan diatas bisa terlihat apabila kosong dia tidak memberikan spesifik dat apa yang barubah untuk melakukan useEffect, sedangkan bawahnya dia akan melakukan useEffect ketika login memiliki update atau perubahan karena kita gunakan `[login]`
+---
+### React  JS Basic (Event)
+- Disini kita akan mempelajari tentang bagaimana kita menghandle sebuah form dan sedikit tentang event event apa saja yang digunakan untuk menghandle form
+
