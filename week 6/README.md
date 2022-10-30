@@ -122,8 +122,27 @@
 - Apabila kita hanya menggunakan useEffect dan memberikan sebuah intruksi didalamnya, maka dia akan menajalankan instruksi tersebut setiap page mount. Page apabila di refresh akan melakukan mount untuk menampilkan tampilan awal page. Pada react sendiri apabila kita melakukan perubahan website kita akan otomatis refresh dan nantinya useEffect kita akan bekerja terus.
 - Hal tersebut bisa kita tanggulangi dengan memberikan bracket array kosong. Nantinya apabila ada perubahan page kita tidak akan melakukan useEffect ketika refresh hanya ketika mouunt pertama kali
 - Namun kita bisa memberikan isi didalamnya untuk memberikan spesifik update apa yang akan membuat kita melakukan useEffect
-- Pada codingan diatas bisa terlihat apabila kosong dia tidak memberikan spesifik dat apa yang barubah untuk melakukan useEffect, sedangkan bawahnya dia akan melakukan useEffect ketika login memiliki update atau perubahan karena kita gunakan `[login]`
+  Pada codingan diatas bisa terlihat apabila kosong dia tidak memberikan spesifik dat apa yang barubah untuk melakukan useEffect, sedangkan bawahnya dia akan melakukan useEffect ketika login memiliki update atau perubahan karena kita gunakan `[login]`
 ---
 ### React  JS Basic (Event)
 - Disini kita akan mempelajari tentang bagaimana kita menghandle sebuah form dan sedikit tentang event event apa saja yang digunakan untuk menghandle form
-
+- Sebelum lebih lanjut kita akan berkenalan terlebih dahulu dengan event baru yaitu onChange dan onSubmit
+- OnChange sendiri merupakan sebuah form yang bisa kita handle untuk menangkap segala perubahan yang ada pada suatu innputan di form
+- Setelah onCHange ada juga onSubmit, onSubmit kerjanya hampir sama dengan `_.AddEventListener...` pada Javascript. onSubmit memungkinkan kita memasukkan sebuah fungsi yang bisa mengolah data kita. Agar lebih paham kita lihat contoh codingan dibawah
+![event](event3.png)
+- Terlihat dari codingan diatasSetelah itu pastikan kita memiliki sebuah state untuk menampung data inputan terlebih daulu. Disini saya memanfaatkan useState untuk membuat penampung data dari inputan.
+- Mengapa kita assign useState dengan `(" ")` ? Karena pada input kita assignkan state `value={state}` tadi biar awalnya kosong lalu selanjutnya mengikuti
+- Lalu selanjutnya kita memberikan event onChange. Event onChange disini dia akan menangkap semua perubahan yang ada pada inputan dan tergantung kita mau apakan pada saat event itu terjadi.
+- Kita menggunakan `onChange={(e)=>setNama(e.target.value)}` artinya setiap perubahan yang terjadi pada inputan, kita akan melakukan setNama sesuai dengan berubah pada inputan tersebut
+- Setelah onChange berhasil berarti kita sudah memiliki sebuah form yang secara realtime data disimpan, tapi apabila langsung kita gunakan onChange dan pada tampilan data langsung kita gunakan state tersebut nantinya isian datanya akan berubah secara realtime, ex :
+![event](event4.gif)
+- Nah hal itu terjadi karena state akan menangkap semua perubahan yang terjadi, otomatis apabila kita langsung tampilan state tersebut nantinya selama kita mengisi perubahan pada inputan secara realtime akan berubah
+- Hal tersebut kan kurang menarik dan aneh (untuk hal tertentu) maka dari itu kita gunakan onSubmit
+- onSubmit akan menghandle form jika dan hanya jika kita menekan submit pada form tersebut. Nantinya onSubmit akan menjalankan perintah setelah kita submit.  Sama seperti halnya EventListener pada javascript kemarin, kita juga dapat memberi function didalamnya untuk kita bisa mengolah data datanya.
+- Lalu bagaimana untuk tampilan data yang secara realtime ikut berubah, simplenya kita mebuat state baru untuk menampilkan data dan kita olah di fungsi untuk onSubmit
+- Bisa terlihat dari codingan tadi bahwa saya membuat sebuah state berupa object yang nantinya pada function SUbmit atau function yang kita gunakan untuk onSubmit kita dapat memasukkan isian inputan tadi kedalam object data
+- Nah apabila sudah seperti itu, kita menggunakan object data untuk menampilkan data yang ada, oleh sebab itu pada tampilan data saya menggunakan dot notation karena object
+- Selanjutnya kita juga bisa menambahkan reset untuk form agar setelah submit field form kosong, reset itu dimasukkan di function onSubmit
+- hasil akhirnya :
+![event](event5.gif)
+- Selain mengisi state baru, kita jjuga bisa memanfaatkan menggunakan post API ketika submit data form, hal tersebut juga memungkinkan
