@@ -78,3 +78,31 @@
         <Route path="*" element={<NotFound />} />
         ...
         </Routes>
+
+- Selanjutnya bagaimana jika kita memiliki sebuah route yang didalamnya terdapat child berupa route juga. Biasanya disebut dengan nested route
+- Pada nested route, route yang memiliki child akan menjadi sebuah double tag yang didalamnya kita buat bungkus childnya. Contoh :
+
+
+    ![router](nested%20route.png)
+
+- Keyword `index` pada child menunjukkan bahwa halam child tersebut akan ditampilkan pertama
+- `</Outlet>` berfungsi untuk mengambil semua informasi route yang sudah kita buat di awal
+- Selanjutnya kita akan belajar cara mengirim sebuah data dari satu pages ke page lainnya. Simplenya kita akan membawa sebuah data yang nanti kita gunakan untuk memproses dengan data tersebut ke pages selanjutnya
+- Terdapat sebuah perbedaan saat kita ingin mengirim sebuah data dengan router, pada path kita harus menuliskan id atau data apa yang digunkan sebagai data yang dibawa, contoh
+
+        <Route path="/Participant/:id" element={<Detail/>}/>
+
+- Disini maksudnya adalah kita menggunakan sebuah path dengan membawa data dan mengirim data tersebut ke page `<Detail/>`
+- Pada konsep ini kita menggunakan hook `useNavigate()` untuk menavigasi sekaligus membawa sebuah data ke pages selanjutnya dan `useParams()` untuk mengambil data nya. Kita coba di codingan
+
+    ![router](route6.png)
+    ![router](route7.png)
+    ![router](route8.png)
+
+- Pada codingan diatas terlihat bahwa nantinya di path kita bisa menambahkan sebuah data yang ingin kita bawa
+- Yang tidak kalah penting kita juga perlu import useNavigate dan useParams agar bisa digunakan
+- Pada trigger useNavigate saya menggunakan sebuah fungsi button onClick yang akan menjalankan useNavigate dengan membawa sebuah parameter id data yang di klik
+- Pada detail, useParams akan menampilkan sebuah object. Maka dari itu kita perlu men-destructure agar bisa mendapat value tidak dalam object. Dan hasilnya akan nampak seperti dibawah :
+
+    ![router](route9.gif)
+---
