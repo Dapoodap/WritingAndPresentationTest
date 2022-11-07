@@ -181,3 +181,33 @@ Selanjutnya kita panggil dispatch seambil membawa parameter untuk diberi kedalam
     ![redux](redux13.gif)
 ---
 ### React JS Redux-Thunk
+- Sebelumnya kita sudah belajar tentang redux yang bertindak sebagai state management system pada react. Ada satu hal yang kurang saat kita belajar adalah penggunaan asynchronous pada aplikasi kita.
+- Penggunaan redux yang kita buat sebelumnya hanya berlaku sebagai proses synchronous. Untuk bisa melakukan proses asynchronous kita perlu menggunakan sebuah *middleware*. Middleware akan bertindak sebagai alat bantu untuk kita bisa melakukan proses asynchronous
+- Middleware tersebut adalah **Thunk**. Dengan thunk akan membantu kita memproses asynchronous pada redux dengan baik
+- Apa saja yang harus kita lakukan untuk menggunakan thunk ?. Kita perlu yang pertama install thunk 
+
+        $ npm install redux-thunk
+- Selanjutnya karena proses asynchronous yang kita mau coba adalah fech, get data API maka kita install juga untuk axiosnya
+
+        $ npm install axios
+- Setelah sudah selesai kita mulai masuk untuk membuat reducer dulu. Reducer disini akan berisi tentang initial state dan proses proses statnya. Nantinya kira kira kita akan membuat 3 kondisi dimana nantinya akan membantu kita agar tahu saat ini proses apa. Mulai start, fetch API, hingga berhasil fetch
+
+    ![redux](thunk.png)
+
+- Setelah sudah selesai kita mulai masuk untuk membuat action pada redux. PAda action kita beri sebuah fungsi yang nantinya kita gunakan untuk fech API kita
+
+    ![redux](thunk2.png)
+- Setelah action dann reducer siap kita gunakan store kita. Karena kita masih mempunyai reducer dari module kemarin maka kita akan tetap menggunakan combineReducer namun karena kita membuat thunk kita menambahkan command 
+
+        ...applyMiddleware(thunk)
+
+    ![redux](thunk3.png)
+
+- Setelah store juga sudah siap kita masuk ke component untuk menyusun dispatch dan selector agar kita bisa berinteraksi dengan store
+- Karena kita ingin selalu melakukan fetch API ketika component dimuat, maka kita akan membuat sebuah useEffect untuk menampung hasil fetch API dengan command getFetch() dari action tadi
+- Lalu untuk loading agar bisa tahu sedang apa dan kita bisa tahu juga dalam proses apa sekarang, kita akan menggunakan conitional rendering untuk melihat apakah proses yang kita sedang true atau false berdasarkan loading
+
+    ![redux](thunk4.png)
+    ![redux](thunk5.gif)
+- Pada action nantinya kita juga bisa menambahkan proses axios lain seperti post,put/patch. Caranya sama tinggal kita buat function untuk proses asynchronous lainnya.
+
